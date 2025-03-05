@@ -9,6 +9,7 @@ def findMissingNumber(numbers):
     #Accessing each element of a sorted array with a for loop
     for i in range(len(numbers)):
         # we know x is a constant increament which should be always 1
+        #x = current - previous
         x = numbers[i] - numbers[i-1]
         #for the case that x exceeds 1 means next element from theprevious is skipped
         if(x > 1):
